@@ -1,12 +1,13 @@
 import Cards from "../components/Cards"
+import Content from "../components/Content"
 
 const Home = () => {
   return (
     <div>
-        {
-            //aqui vamos a invocar todo los otros componentes que integran el home
-        }
-        <Cards />
+        
+      <Content/>            //aqui vamos a invocar todo los otros componentes que integran el home
+        
+      <Cards />
     </div>
   )
 }
