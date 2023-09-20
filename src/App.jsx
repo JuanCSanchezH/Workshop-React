@@ -11,6 +11,9 @@ import Careers from './pages/Careers'
 import Events from './pages/Events'
 import Products from './pages/Products'
 import Support from './pages/Support'
+import Content from './components/Content'
+import './styles/App.scss'
+
 
 function App() {
 
@@ -28,6 +31,9 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    <div className='App'>
+      <Content />
+    </div>
   )
 }
 
