@@ -48,7 +48,7 @@ const Cards = () => {
   ]
   return (
     <ChakraProvider>
-      <Box p={4}>
+      <Box className="containerCards" p={4}>
       <Flex justify="space-between" mt={4}>
         <Text fontSize="xl" mb={4}>
           OUR CREATIONS

@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
         
-      <Content/>            //aqui vamos a invocar todo los otros componentes que integran el home
+      <Content/> 
         
       <Cards />
         {
@@ -19,5 +19,4 @@ const Home = () => {
     </div>
   )
 }
-
 export default Home
