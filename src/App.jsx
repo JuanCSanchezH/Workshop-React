@@ -1,7 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-// import './App.css'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from './pages/Home'
@@ -12,11 +10,8 @@ import Events from './pages/Events'
 import Products from './pages/Products'
 import Support from './pages/Support'
 import Content from './components/Content'
-import './styles/App.scss'
-
 
 function App() {
-
   return (
     <BrowserRouter>
       <Routes>
@@ -31,9 +26,6 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-    // <div className='App'>
-    //   <Content />
-    // </div>
   )
 }
 
