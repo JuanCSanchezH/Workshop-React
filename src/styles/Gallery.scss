@@ -1,0 +1,80 @@
+.gallery-container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    .top-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      h1 {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 3em;
+        color: black;
+        width: 500px;
+        margin-top: -15px;
+        margin-bottom: 50px;
+      }
+      #see-all-btn {
+        background-color: black !important;
+        border-color: black;
+        height: 25px;
+        width: 90px;
+        border-radius: 0;
+        font-size: 10px;
+        letter-spacing: 2px;
+        transition: background-color 0.3s, color 0.3s; 
+        color: white;
+        
+        &:hover {
+            background-color: black; 
+            color: rgb(116, 17, 94);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+    }
+    .card-container {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      gap: 20px;
+      justify-content: center;
+      .card {
+        width: 450px;
+        height: 170px;
+        position: relative;
+        &__title {
+          position: absolute;
+          bottom: 10px;
+          left: 30px;
+          color: white;
+          text-transform: uppercase;
+          font-size: 30px;
+          line-height: 1;
+          display: block;
+          width: 170px;
+        }
+      }
+
+     
+    }
+
+    @media (min-width: 1200px) {
+      width: 100%;
+      height: 100%;
+      .card-container {
+        grid-template-columns: repeat(4, 260px);
+        grid-template-rows: repeat(2, 450px);
+        gap: 40px;
+        .card {
+          width: 260px;
+          height: 450px;
+          &__title {
+            bottom: 25px;
+            left: calc(50% - 170px / 2);
+          }
+        }
+      }
+    }
+  }
+  

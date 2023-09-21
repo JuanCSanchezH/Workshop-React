@@ -5,6 +5,7 @@ footer {
 
     .footer-content {
         max-width: 960px;
+        width: 200%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -64,4 +65,61 @@ footer {
             }
         }
     }
+}
+
+@media screen and (min-width: 390px) and (max-width: 844px) {
+    footer {
+        background-color: hsl(0, 0%, 0%);
+        color: #fff;
+        width: 415px;
+    
+        .footer-content {
+            width: 100%;
+            margin: 0 auto;
+            flex-direction: column;
+    
+            .footer-left {
+                flex-direction: column;
+                h2 {
+                    margin-bottom: 20px;
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+    
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    cursor: pointer;
+                    flex-direction: column;
+                    display: flex;
+                    text-align: center;
+                    
+    
+                    li {
+                        display: inline;
+                        margin-right: 20px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+    
+            .footer-right {
+                .social-icons {
+                    display: flex;
+                    gap: 20px; 
+                    justify-content: center;
+                   margin-top: 20px;
+                }
+
+    
+                   
+                p {
+                    margin: 0;
+                    color: rgb(151, 147, 147)!important;
+                }
+            }
+        }
+    }
+    
+
 }

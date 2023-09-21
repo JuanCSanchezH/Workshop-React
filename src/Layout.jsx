@@ -32,7 +32,7 @@ const Layout = () => {
             </div>
             
             <div className='nav-box__content'>
-                <p>INMERSIVE EXPERIENCES THAT DELIVER</p>
+                <p>IMMERSIVE EXPERIENCES THAT DELIVER</p>
             </div>
         </nav>
         <Outlet/>
